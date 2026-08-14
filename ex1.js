@@ -56,15 +56,23 @@ const flightReservation = {
 console.log("Puerta de embarque: ", flightReservation.gate);
 
 // 1. Muestra el número de vuelo
+console.log("Número de vuelo:", flightReservation.flightNumber);
 
 // 2. Muestra el nombre de la aerolínea
+console.log("Nombre de la Aerolinea: ", flightReservation.airline);
 
 // 3. Muestra TODOS los datos sobre la fecha de salida del vuelo
+console.log(flightReservation.departure);
 
 // 4. Muestra únicamente el nombre aeropuerto de llegada
+console.log(flightReservation.arrival.airport);
 
 // 5. Muestra únicamente el peso del equipaje facturado
+console.log("Peso del equipaje facturado:" , flightReservation.baggage.checked.totalWeight );
 
 // 6. Muestra la SUMA del peso del equipaje facturado y el equipaje de cabina
+console.log("Peso del Equipaje de mano y el facturado:", flightReservation.baggage.checked.totalWeight + flightReservation.baggage.carryOn.totalWeight );
 
 // 7. Usa el método includes para indicar si este vuelo dispone del servicio de Wi-Fi o no (true o false)
+
+console.log("¿Wi-Fi?: ", flightReservation.inFlightServices.includes("Wi-Fi"));
